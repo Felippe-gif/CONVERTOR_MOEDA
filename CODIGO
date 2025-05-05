@@ -1,0 +1,28 @@
+print('\n\t\t ==== CONVERTOR DE MOEDAS ====\n')
+while True:
+    n1 = int(input('digite seu dinheiro:'))
+
+    opçao = int(input('escolha qual moeda vc quer converter 1 USD / 2 EUR / 3 GBP/ 4 USSD PRA REAIS :'))
+
+    if opçao == 1:
+        n2 = (n1 * 0.20)
+        print(f'{n2:.2f}')
+    elif opçao == 2:
+       n2 = (n1 * 0.18)
+       print(f'{n2:.2f}')
+    elif  opçao == 3:
+        n2 = (n1 * 0.16)
+        print(f'{n2:.2f}')
+    elif  opçao == 4:
+        n2 = (n1 / 5.00)
+        print(f'{n2:.2f}')
+    else:
+        print("Opção inválida. Escolha uma opção entre 1 e 4.")
+        escolha = input('QUER TENTAR NOVAMENTE (SIM/NAO) :').upper()
+        if escolha != 'SIM':
+            print('\nOBRIGADO PELA SUA PARTICIPAÇÃO!')
+            break
+    escolha = input('\nQuer fazer outra conversão? (SIM/NAO): ').upper()
+    if escolha != 'SIM':
+            print('\nOBRIGADO PELA SUA PARTICIPAÇÃO!')
+            break
